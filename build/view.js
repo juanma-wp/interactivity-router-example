@@ -90,10 +90,11 @@ const {
         actions
       } = yield Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! @wordpress/interactivity-router */ "@wordpress/interactivity-router"));
       debugger;
-      state.urlRegionDisplay = new URL(e.target.href, state.baseUrl);
+      state.urlRegionDisplay = e.target.href;
+      const urlToNavigatePlayground = new URL(state.urlRegionDisplaySlug, state.baseUrl);
 
       //yield actions.navigate( state.urlRegionDisplaySlug );
-      yield actions.navigate(e.target.href);
+      yield actions.navigate(urlToNavigatePlayground);
     }
   }
 });

@@ -15,10 +15,14 @@ const { state } = store("router-2f43f8", {
       e.preventDefault();
       const { actions } = yield import("@wordpress/interactivity-router");
       debugger;
-      state.urlRegionDisplay = new URL(e.target.href, state.baseUrl);
+      state.urlRegionDisplay = e.target.href;
+      const urlToNavigatePlayground = new URL(
+        state.urlRegionDisplaySlug,
+        state.baseUrl
+      );
 
       //yield actions.navigate( state.urlRegionDisplaySlug );
-      yield actions.navigate(e.target.href);
+      yield actions.navigate(urlToNavigatePlayground);
     },
   },
 });
