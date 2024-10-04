@@ -1,5 +1,15 @@
 import { store } from "@wordpress/interactivity";
 
+const getUrlScope = (_url) => {
+  const url = new URL(_url); // https://playground.wordpress.net/scope:0.6413659246282131/
+  const baseUrl = url.origin;
+  const path = url.pathname;
+  const scopeMatch = path.match(/scope:[^/]+/);
+  return {
+    baseUrl,
+    scope: scopeMatch ? scopeMatch[0] : null,
+  };
+};
 const { state } = store("router-2f43f8", {
   state: {
     baseUrl: "",
@@ -11,10 +21,11 @@ const { state } = store("router-2f43f8", {
   },
   callbacks: {
     setBaseUrl: () => {
-      //const url = new URlwindow.location.href, // https://playground.wordpress.net/scope:0.6413659246282131/
-      state.baseUrl = window.location.href;
-      console.log(state.baseUrl);
-      debugger;
+      const { baseUrl, scope } = getUrlScope(window.location.href);
+      state.baseUrl = baseUrl;
+      if (scope) {
+        state.baseUrl += `/scope:${scope}`;
+      }
     },
   },
   actions: {

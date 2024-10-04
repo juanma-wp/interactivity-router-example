@@ -69,6 +69,16 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/interactivity */ "@wordpress/interactivity");
 
+const getUrlScope = _url => {
+  const url = new URL(_url); // https://playground.wordpress.net/scope:0.6413659246282131/
+  const baseUrl = url.origin;
+  const path = url.pathname;
+  const scopeMatch = path.match(/scope:[^/]+/);
+  return {
+    baseUrl,
+    scope: scopeMatch ? scopeMatch[0] : null
+  };
+};
 const {
   state
 } = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)("router-2f43f8", {
@@ -84,10 +94,14 @@ const {
   },
   callbacks: {
     setBaseUrl: () => {
-      //const url = new URlwindow.location.href, // https://playground.wordpress.net/scope:0.6413659246282131/
-      state.baseUrl = window.location.href;
-      console.log(state.baseUrl);
-      debugger;
+      const {
+        baseUrl,
+        scope
+      } = getUrlScope(window.location.href);
+      state.baseUrl = baseUrl;
+      if (scope) {
+        state.baseUrl += `/scope:${scope}`;
+      }
     }
   },
   actions: {
