@@ -73,6 +73,7 @@ const {
   state
 } = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)("router-2f43f8", {
   state: {
+    baseUrl: window.location.href,
     urlRegionDisplay: window.location.href,
     get urlRegionDisplaySlug() {
       const {
@@ -82,19 +83,13 @@ const {
       return isHome ? "/" : "/" + pathname.split("/").filter(Boolean).pop();
     }
   },
-  callbacks: {
-    setUrlPathname: () => {
-      console.log("setUrlPathname");
-      console.log(state.urlRegionDisplay);
-    }
-  },
   actions: {
     *navigate(e) {
       e.preventDefault();
       const {
         actions
       } = yield Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! @wordpress/interactivity-router */ "@wordpress/interactivity-router"));
-      state.urlRegionDisplay = e.target.href;
+      state.urlRegionDisplay = new URL(e.target.href, state.baseUrl);
 
       //yield actions.navigate( state.urlRegionDisplaySlug );
       yield actions.navigate(e.target.href);
