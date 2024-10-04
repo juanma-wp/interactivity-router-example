@@ -16,6 +16,7 @@
 	<?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>
 	data-wp-interactive="router-2f43f8"
 	data-wp-router-region="region-example-2f43f8"
+	data-wp-init="callbacks.setUrlPathname"
 >
 
 		<p><em>Displaying region "region-example-2f43f8" from <a data-wp-bind--href="state.urlRegionDisplay" data-wp-text="state.urlRegionDisplay"></a></em></p>
