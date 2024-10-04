@@ -2,7 +2,7 @@ import { store } from "@wordpress/interactivity";
 
 const { state } = store("router-2f43f8", {
   state: {
-    baseUrl: ''
+    baseUrl: "",
     urlRegionDisplay: window.location.href,
     get urlRegionDisplaySlug() {
       const { pathname } = new URL(state.urlRegionDisplay);
@@ -11,9 +11,10 @@ const { state } = store("router-2f43f8", {
   },
   callbacks: {
     setBaseUrl: () => {
-		debugger;
-		//const url = new URlwindow.location.href, // https://playground.wordpress.net/scope:0.6413659246282131/
+      //const url = new URlwindow.location.href, // https://playground.wordpress.net/scope:0.6413659246282131/
       state.baseUrl = window.location.href;
+      console.log(state.baseUrl);
+      debugger;
     },
   },
   actions: {
