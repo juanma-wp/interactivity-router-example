@@ -6,8 +6,7 @@ const { state } = store("router-2f43f8", {
     urlRegionDisplay: window.location.href,
     get urlRegionDisplaySlug() {
       const { pathname } = new URL(state.urlRegionDisplay);
-      const isHome = pathname === "/";
-      return isHome ? "/" : "/" + pathname.split("/").filter(Boolean).pop();
+      return pathname.split("/").filter(Boolean).pop();
     },
   },
   actions: {
@@ -16,10 +15,8 @@ const { state } = store("router-2f43f8", {
       const { actions } = yield import("@wordpress/interactivity-router");
       debugger;
       state.urlRegionDisplay = e.target.href;
-      const urlToNavigatePlayground = new URL(
-        state.urlRegionDisplaySlug,
-        state.baseUrl
-      );
+      const urlToNavigatePlayground =
+        state.baseUrl + state.urlRegionDisplaySlug;
 
       //yield actions.navigate( state.urlRegionDisplaySlug );
       yield actions.navigate(urlToNavigatePlayground);
