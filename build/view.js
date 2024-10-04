@@ -1,104 +1,23 @@
-import * as __WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__ from "@wordpress/interactivity";
 /******/ var __webpack_modules__ = ({
 
-/***/ "@wordpress/interactivity-router":
-/*!**************************************************!*\
-  !*** external "@wordpress/interactivity-router" ***!
-  \**************************************************/
-/***/ ((module) => {
+/***/ "./src/view.js":
+/*!*********************!*\
+  !*** ./src/view.js ***!
+  \*********************/
+/***/ (() => {
 
-module.exports = import("@wordpress/interactivity-router");;
-
-/***/ }),
-
-/***/ "@wordpress/interactivity":
-/*!*******************************************!*\
-  !*** external "@wordpress/interactivity" ***!
-  \*******************************************/
-/***/ ((module) => {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__;
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/src/view.js: Unexpected token, expected \",\" (6:4)\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   state\u001b[33m:\u001b[39m {\n \u001b[90m 5 |\u001b[39m     baseUrl\u001b[33m:\u001b[39m \u001b[32m''\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     urlRegionDisplay\u001b[33m:\u001b[39m window\u001b[33m.\u001b[39mlocation\u001b[33m.\u001b[39mhref\u001b[33m,\u001b[39m\n \u001b[90m   |\u001b[39m     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m     \u001b[36mget\u001b[39m urlRegionDisplaySlug() {\n \u001b[90m 8 |\u001b[39m       \u001b[36mconst\u001b[39m { pathname } \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mURL\u001b[39m(state\u001b[33m.\u001b[39murlRegionDisplay)\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m       \u001b[36mreturn\u001b[39m pathname\u001b[33m.\u001b[39msplit(\u001b[32m\"/\"\u001b[39m)\u001b[33m.\u001b[39mfilter(\u001b[33mBoolean\u001b[39m)\u001b[33m.\u001b[39mpop() \u001b[33m||\u001b[39m \u001b[32m\"\"\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n    at constructor (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:362:19)\n    at JSXParserMixin.raise (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:3259:19)\n    at JSXParserMixin.unexpected (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:3279:16)\n    at JSXParserMixin.expect (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:3589:12)\n    at JSXParserMixin.parseObjectLike (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:11343:14)\n    at JSXParserMixin.parseExprAtom (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10867:23)\n    at JSXParserMixin.parseExprAtom (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:6811:20)\n    at JSXParserMixin.parseExprSubscripts (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10591:23)\n    at JSXParserMixin.parseUpdate (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10576:21)\n    at JSXParserMixin.parseMaybeUnary (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10556:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10410:61)\n    at JSXParserMixin.parseExprOps (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10415:23)\n    at JSXParserMixin.parseMaybeConditional (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10392:23)\n    at JSXParserMixin.parseMaybeAssign (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10355:21)\n    at /Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10325:39\n    at JSXParserMixin.allowInAnd (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:11937:12)\n    at JSXParserMixin.parseMaybeAssignAllowIn (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10325:17)\n    at JSXParserMixin.parseObjectProperty (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:11473:83)\n    at JSXParserMixin.parseObjPropValue (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:11498:100)\n    at JSXParserMixin.parsePropertyDefinition (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:11438:17)\n    at JSXParserMixin.parseObjectLike (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:11353:21)\n    at JSXParserMixin.parseExprAtom (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10867:23)\n    at JSXParserMixin.parseExprAtom (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:6811:20)\n    at JSXParserMixin.parseExprSubscripts (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10591:23)\n    at JSXParserMixin.parseUpdate (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10576:21)\n    at JSXParserMixin.parseMaybeUnary (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10556:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10410:61)\n    at JSXParserMixin.parseExprOps (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10415:23)\n    at JSXParserMixin.parseMaybeConditional (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10392:23)\n    at JSXParserMixin.parseMaybeAssign (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10355:21)\n    at /Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10325:39\n    at JSXParserMixin.allowInAnd (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:11937:12)\n    at JSXParserMixin.parseMaybeAssignAllowIn (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10325:17)\n    at JSXParserMixin.parseExprListItem (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:11695:18)\n    at JSXParserMixin.parseCallExpressionArguments (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10770:22)\n    at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10694:29)\n    at JSXParserMixin.parseSubscript (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10631:19)\n    at JSXParserMixin.parseSubscripts (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10604:19)\n    at JSXParserMixin.parseExprSubscripts (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10595:17)\n    at JSXParserMixin.parseUpdate (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10576:21)\n    at JSXParserMixin.parseMaybeUnary (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10556:23)\n    at JSXParserMixin.parseMaybeUnaryOrPrivate (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10410:61)\n    at JSXParserMixin.parseExprOps (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10415:23)\n    at JSXParserMixin.parseMaybeConditional (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10392:23)\n    at JSXParserMixin.parseMaybeAssign (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10355:21)\n    at /Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10325:39\n    at JSXParserMixin.allowInAnd (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:11932:16)\n    at JSXParserMixin.parseMaybeAssignAllowIn (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:10325:17)\n    at JSXParserMixin.parseVar (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:12864:91)\n    at JSXParserMixin.parseVarStatement (/Users/juanmanuelgarrido/PROJECTS/2024/interactivity-router-example/node_modules/@babel/parser/lib/index.js:12710:10)");
 
 /***/ })
 
 /******/ });
 /************************************************************************/
-/******/ // The module cache
-/******/ var __webpack_module_cache__ = {};
 /******/ 
-/******/ // The require function
-/******/ function __webpack_require__(moduleId) {
-/******/ 	// Check if module is in cache
-/******/ 	var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 	if (cachedModule !== undefined) {
-/******/ 		return cachedModule.exports;
-/******/ 	}
-/******/ 	// Create a new module (and put it into the cache)
-/******/ 	var module = __webpack_module_cache__[moduleId] = {
-/******/ 		// no module.id needed
-/******/ 		// no module.loaded needed
-/******/ 		exports: {}
-/******/ 	};
+/******/ // startup
+/******/ // Load entry module and return exports
+/******/ // This entry module doesn't tell about it's top-level declarations so it can't be inlined
+/******/ var __webpack_exports__ = {};
+/******/ __webpack_modules__["./src/view.js"]();
 /******/ 
-/******/ 	// Execute the module function
-/******/ 	__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 
-/******/ 	// Return the exports of the module
-/******/ 	return module.exports;
-/******/ }
-/******/ 
-/************************************************************************/
-/******/ /* webpack/runtime/make namespace object */
-/******/ (() => {
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = (exports) => {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/ })();
-/******/ 
-/************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
-/*!*********************!*\
-  !*** ./src/view.js ***!
-  \*********************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/interactivity */ "@wordpress/interactivity");
-
-const {
-  state
-} = (0,_wordpress_interactivity__WEBPACK_IMPORTED_MODULE_0__.store)("router-2f43f8", {
-  state: {
-    baseUrl: window.location.href,
-    // https://playground.wordpress.net/scope:0.6413659246282131/
-    urlRegionDisplay: window.location.href,
-    get urlRegionDisplaySlug() {
-      const {
-        pathname
-      } = new URL(state.urlRegionDisplay);
-      return pathname.split("/").filter(Boolean).pop() || "";
-    }
-  },
-  actions: {
-    *navigate(e) {
-      e.preventDefault();
-      const {
-        actions
-      } = yield Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! @wordpress/interactivity-router */ "@wordpress/interactivity-router"));
-      debugger;
-      state.urlRegionDisplay = e.target.href;
-      const urlToNavigatePlayground = state.baseUrl + state.urlRegionDisplaySlug;
-
-      //yield actions.navigate( state.urlRegionDisplaySlug );
-      yield actions.navigate(urlToNavigatePlayground);
-    }
-  }
-});
-})();
-
 
 //# sourceMappingURL=view.js.map
