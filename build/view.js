@@ -100,7 +100,7 @@ const {
       } = getUrlScope(window.location.href);
       state.baseUrl = baseUrl;
       if (scope) {
-        state.baseUrl += `/${scope}`;
+        state.baseUrl += `/${scope}/`;
       }
     }
   },
