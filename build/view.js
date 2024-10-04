@@ -82,6 +82,12 @@ const {
       return isHome ? "/" : "/" + pathname.split("/").filter(Boolean).pop();
     }
   },
+  callbacks: {
+    setUrlPathname: () => {
+      console.log("setUrlPathname");
+      console.log(state.urlRegionDisplay);
+    }
+  },
   actions: {
     *navigate(e) {
       e.preventDefault();
