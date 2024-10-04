@@ -44,6 +44,7 @@
 			</code></p>
 
 			<p>state.urlRegionDisplay: <code data-wp-text="state.urlRegionDisplay"></code></p>
+			<p>state.baseUrl: <code data-wp-text="state.baseUrl"></code></p>
 
 
 		</div>
