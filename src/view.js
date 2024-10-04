@@ -24,7 +24,7 @@ const { state } = store("router-2f43f8", {
       const { baseUrl, scope } = getUrlScope(window.location.href);
       state.baseUrl = baseUrl;
       if (scope) {
-        state.baseUrl += `/scope:${scope}`;
+        state.baseUrl += `/${scope}`;
       }
     },
   },
