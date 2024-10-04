@@ -14,6 +14,7 @@ const { state } = store("router-2f43f8", {
     *navigate(e) {
       e.preventDefault();
       const { actions } = yield import("@wordpress/interactivity-router");
+      debugger;
       state.urlRegionDisplay = new URL(e.target.href, state.baseUrl);
 
       //yield actions.navigate( state.urlRegionDisplaySlug );

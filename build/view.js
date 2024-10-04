@@ -89,6 +89,7 @@ const {
       const {
         actions
       } = yield Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! @wordpress/interactivity-router */ "@wordpress/interactivity-router"));
+      debugger;
       state.urlRegionDisplay = new URL(e.target.href, state.baseUrl);
 
       //yield actions.navigate( state.urlRegionDisplaySlug );
